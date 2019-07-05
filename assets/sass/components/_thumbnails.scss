@@ -1,0 +1,9 @@
+.thumbnails__imagen{
+    
+    &--circle img{
+    //width: 180px;
+    //height: 180px;
+    border-radius: 50%;
+    border: 1px solid $dark-blue;
+    }
+}

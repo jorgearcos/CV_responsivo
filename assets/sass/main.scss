@@ -1,15 +1,28 @@
 // main.scss # Manifest File
 // Vendors bootstrap 4.3.1
-/*@import 'vendor/bootstrap-4.3.1/bootstrap';*/
+@import 'vendor/bootstrap-4.3.1/bootstrap';
 //las demas parciales
+//abstracts
 @import 'abstracts/functions';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+
+//base
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/base';
-/*@import 'components/navbar';
-@import 'components/buttons';
+
+//components
+@import 'components/thumbnails';
+
+//layout
 @import 'layout/header';
-@import 'layout/main-section';
-@import 'layout/we-us';*
+@import 'layout/navegation';
+@import 'layout/about';
+@import 'layout/experience';
+@import 'layout/education';
+@import 'layout/skills';
+@import 'layout/contact';
+
+/* @import 'components/navbar';
+@import 'components/buttons';*/

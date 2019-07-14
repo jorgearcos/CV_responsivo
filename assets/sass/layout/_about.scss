@@ -1,0 +1,28 @@
+.about{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $light-gray;
+
+
+    h4{
+        font-size: $medium;
+        color: $soft-dblue;
+        padding-bottom:1rem;
+    }
+    a{
+        text-decoration: none;
+        color: $soft-dblue;
+
+        &:hover{
+            color: $light-gray;
+        }
+    }
+
+    &__item{
+        color: $soft-dblue;
+        margin: 2rem 0;
+
+        i{
+            margin: 0 .4rem 0 0;
+        }
+    }
+}

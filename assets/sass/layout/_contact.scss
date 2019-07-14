@@ -1,0 +1,52 @@
+.contact{
+
+    form{
+        width:100%;
+    }
+    label, input, {
+        width: 100%;
+    display: block;
+    }
+
+    label{
+        padding-top: .7rem;
+    }
+    
+    input {
+        border: 1px solid $soft-dblue;
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid $soft-dblue;
+    }
+
+    &__btn{
+        width: 30%;
+        display: block; 
+        color:$white;
+        background-color: $light-green;
+        padding: .7rem .4rem;
+    }
+
+}
+
+@media (max-width: 575.98px) { 
+    .contact__btn{
+        width: 100%;
+        display: block; 
+        color:$white;
+        background-color: $light-green;
+        padding: .7rem .4rem;
+    }
+
+ }
+
+@media (max-width: 767.98px) { 
+    .contact__btn{
+        width: 100%;
+        display: block; 
+        color:$white;
+        background-color: $light-green;
+        padding: .7rem .4rem;
+    }
+ }

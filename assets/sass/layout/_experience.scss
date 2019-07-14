@@ -1,0 +1,33 @@
+.experience{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $light-gray;
+    
+    h3{
+        margin-top:.6rem;
+    }
+
+    &__title--tmn{
+        padding-top: .7rem;
+        font-size:1.3rem;
+    }
+
+    p{
+        margin-top:.8rem;
+    }
+
+}
+
+@media (max-width: 575.98px) { 
+    .experience__title--tmn{
+        padding-top: .2rem;
+        font-size:.9rem;
+    }
+
+ }
+
+@media (max-width: 767.98px) { 
+    .experience__title--tmn{
+        padding-top: .2rem;
+        font-size:.9rem;
+    }
+ }

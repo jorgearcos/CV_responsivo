@@ -9655,13 +9655,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-/*
-$xx-large: 4.375rem;
-$x-large: 1.875rem;
-$large: 1.125rem;
-$medium: 1rem;
-$small: 0.75rem;
-*/
 body {
   margin: 0;
 }
@@ -9670,8 +9663,76 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 3.75rem;
+  color: #2d3047;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #2d3047;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  color: #2d3047;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  color: #2d3047;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #b9bac4;
+}
+
+@media (max-width: 575.98px) {
+  h3 {
+    font-size: 1.125rem;
+    color: #2d3047;
+    font-weight: 700;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  h3 {
+    font-size: 1.125rem;
+    color: #2d3047;
+    font-weight: 700;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .thumbnails__imagen--circle img {
@@ -9679,8 +9740,27 @@ body {
   border: 1px solid #2d3047;
 }
 
+.thumbnails__imagen--circle-sm img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #2d3047;
+}
+
+.bg-cv {
+  background-color: #7cea9c;
+}
+
 .navegation {
   background-color: #7cea9c;
+  position: fixed;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vw;
+  height: 100vh;
+  z-index: 2;
 }
 .navegation a {
   text-decoration: none;
@@ -9694,10 +9774,157 @@ body {
 }
 
 .navegation__item {
-  margin: 0;
+  margin: 0.3rem 0;
   text-transform: uppercase;
 }
 
+.navegation--sm {
+  background-color: #7cea9c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navegation--sm a {
+  text-decoration: none;
+  color: #2d3047;
+}
+.navegation--sm a:hover {
+  color: #7d7d7d;
+}
+.navegation--sm a:focus {
+  color: #bebebe;
+}
+
+.about {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #7d7d7d;
+}
+.about h4 {
+  font-size: 1rem;
+  color: #43486b;
+  padding-bottom: 1rem;
+}
+.about a {
+  text-decoration: none;
+  color: #43486b;
+}
+.about a:hover {
+  color: #7d7d7d;
+}
+.about__item {
+  color: #43486b;
+  margin: 2rem 0;
+}
+.about__item i {
+  margin: 0 0.4rem 0 0;
+}
+
+.experience {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #7d7d7d;
+}
+.experience h3 {
+  margin-top: 0.6rem;
+}
+.experience__title--tmn {
+  padding-top: 0.7rem;
+  font-size: 1.3rem;
+}
+.experience p {
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 575.98px) {
+  .experience__title--tmn {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .experience__title--tmn {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
+.education {
+  padding: 3rem 0;
+  border-bottom: 1px solid #7d7d7d;
+}
+.education__title--tmn {
+  padding-top: 0.7rem;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 575.98px) {
+  .education__title--tmn {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .education__title--tmn {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
+.Skills {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #7d7d7d;
+}
+.Skills h3 {
+  margin-top: 0.6rem;
+}
+.Skills li {
+  font-size: 0.8rem;
+  color: #b9bac4;
+  list-style: none;
+}
+
+.contact form {
+  width: 100%;
+}
+.contact label, .contact input {
+  width: 100%;
+  display: block;
+}
+.contact label {
+  padding-top: 0.7rem;
+}
+.contact input {
+  border: 1px solid #43486b;
+}
+.contact textarea {
+  width: 100%;
+  border: 1px solid #43486b;
+}
+.contact__btn {
+  width: 30%;
+  display: block;
+  color: #FFFFFF;
+  background-color: #7cea9c;
+  padding: 0.7rem 0.4rem;
+}
+
+@media (max-width: 575.98px) {
+  .contact__btn {
+    width: 100%;
+    display: block;
+    color: #FFFFFF;
+    background-color: #7cea9c;
+    padding: 0.7rem 0.4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact__btn {
+    width: 100%;
+    display: block;
+    color: #FFFFFF;
+    background-color: #7cea9c;
+    padding: 0.7rem 0.4rem;
+  }
+}
 /* @import 'components/navbar';
 @import 'components/buttons';*/
 

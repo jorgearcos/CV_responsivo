@@ -17,11 +17,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body>
-        <header></header>  
+<body>  
+
+  <header class="d-block d-sm-block d-md-none">
+      <aside class="navegation--sm col-12 col-sm-12">
+          <div class="thumnails__imagen text-center">
+                  <figure class="thumbnails__imagen--circle-sm">
+                          <img src="assets/img/CV_2019.png" alt="fotografia">
+                      </figure>
+          </div>
+          
+          <div class="navegation__group text-center">
+              <p class="navegation__item"><a href="#Presentation">Acerca de mi</a></p>
+              <p class="navegation__item"><a href="#experiencia">Experiencia</a></p>
+              <p class="navegation__item"><a href="#educacion">Educación</a></p>
+              <p class="navegation__item"><a href="#habilidades">Habilidades</a></p>
+              <p class="navegation__item"><a href="#contacto">Contacto</a></p>
+          </div>
+  </header>
+  
  <div class="container">
+
      <div class="row">
-         <div class="col-4">
+         <div class="col-4 d-none d-sm-none d-md-block">
                 <aside class="navegation">
                         <div class="thumnails__imagen text-center">
                                 <figure class="thumbnails__imagen--circle">
@@ -39,15 +57,15 @@
                     
                      </aside>
          </div>
-         <div class="col-8">
-                <main id="presentation">
-                        <section class="about">
+         <div class="col-12 col-sm-12 col-md-8">
+                <main id="Presentation">
+                        <section  class="about">
                             <h1>Jorge Arcos Espinoza</h1>
                             <h4>El notro #1168 | <a href="tel">+56 9 7890 6643</a> | <a href="mailto:jorge.arcos_dis@yahoo.com">jorge.arcos@yahoo.com</a></h4>
                           <p>Titulado el año 2016 de Diseñador Comunicación Visual, egresado de la Universidad Tecnológica Metropolitana, posee noción en software de diseño, con la capacidad de abordar proyectos de gran complejidad, trabajar en equipo y dar soluciones creativas.</p>
                   
                           <p>Se destaca por su empatía, por su responsabilidad, proactividad, por su dedicación, compromiso, por ser una persona confiable y tolerante.</p>
-                          <p><i class="fab fa-github-square fa-3x "></i><i class="fab fa-facebook-square fa-3x "></i><i class="fab fa-linkedin fa-3x "></i><i class="fab fa-twitter-square fa-3x "></i><i class="fab fa-behance-square fa-3x "></i>
+                          <p class="about__item"><i class="fab fa-github-square fa-3x "></i><i class="fab fa-facebook-square fa-3x "></i><i class="fab fa-linkedin fa-3x "></i><i class="fab fa-twitter-square fa-3x "></i><i class="fab fa-behance-square fa-3x "></i>
                           </p>
                         </section>  
                       </main>    
@@ -56,21 +74,23 @@
                           <article>
                               <div class="row">
                                 <h3 class="col-8">RedSalud</h3>
-                                <h3 class="col-4">2018-2019</h3>
+                                <h3 class="experience__title--tmn col-4">2018-2019</h3>
                               </div>
+                              <h5>Diseñador de Marketing y Trademarketing</h5>
                               <p>Se desempeña como  diseñador para la empresa RedSalud, en el área de Marketing y Trade Marketing. </p>
                           </article>
                           <article>
                                 <div class="row">
                                   <h3 class="col-8">H3O Publicidad</h3>
-                                  <h3 class="col-4">2016-2018</h3>
+                                  <h3 class="experience__title--tmn col-4">2016-2018</h3>
                                 </div>
+                                <h5>Diseñador Gráfico</h5>
                                 <p>Diseñador en Agencia H3O publicidad, desempeñando el cargo de Diseñador y Jr. en Dirección de Artes ( manejo de redes sociales, wordpress, originales de imprenta, mailing).</p>
                             </article>
                             <article>
                                     <div class="row">
                                       <h3 class="col-8">Diseñador Freelance</h3>
-                                      <h3 class="col-4">2018-2019</h3>
+                                      <h3 class="experience__title--tmn col-4">2018-2019</h3>
                                     </div>
                                     <p>Creación de la marca Pulpo Producciones, Mania Eventos, desarrollo de papeleria.</p>
                                 </article>
@@ -81,21 +101,21 @@
                             <article>
                                 <div class="row">
                                   <h3 class="col-8">Educación Básica</h3>
-                                  <h3 class="col-4">1998 - 2006</h3>
+                                  <h3 class="education__title--tmn col-4">1998 - 2006</h3>
                                 </div>
                                 <p>Boston College Longitudinal</p>
                             </article>
                             <article>
                                     <div class="row">
                                       <h3 class="col-8">Educación Média</h3>
-                                      <h3 class="col-4">2007 - 2010</h3>
+                                      <h3 class="education__title--tmn col-4">2007 - 2010</h3>
                                     </div>
                                     <p>Boston College Longitudinal</p>
                                 </article>
                                 <article>
                                         <div class="row">
                                           <h3 class="col-8">Educación Superior</h3>
-                                          <h3 class="col-4">2011 - 2016</h3>
+                                          <h3 class="education__title--tmn col-4">2011 - 2016</h3>
                                         </div>
                                         <p>Universidad Tecnológica Metropolitana</p>
                                     </article>
@@ -128,7 +148,22 @@
                             </article>
                       </section>
                   
-                      <section class="contact" id="contacto"></section>
+                      <section class="contact" id="contacto">
+                        <h2>contacto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat at, architecto voluptatum illum sint</p>
+
+                        <form>
+                          <label >Nombre</label>
+                          <input placeholder="insete su nombre" type="text">
+                          <label >Correo Electrónico</label>
+                          <input placeholder="Inserte su correo" type="text">
+                          <label >mensaje</label>
+                          <textarea name="mensaje"  cols="25" rows="8"></textarea>
+                          <button class="contact__btn">Enviar</button>
+
+                        </form>
+
+                      </section>
          </div>
      </div>
  </div>

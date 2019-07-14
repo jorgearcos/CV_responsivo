@@ -1,0 +1,67 @@
+h1{
+    font-size: $xx-large;
+    color:$dark-blue;
+    font-weight: $bold;
+}
+
+h2{
+    font-size: $x-large;
+    color:$dark-blue;
+    font-weight: $bold;
+    margin-top: 1.5rem;
+}
+
+h3{
+    font-size: $x-large;
+    color:$dark-blue;
+    font-weight: $bold;
+}
+
+h5{
+    font-size: $medium;
+    color:$dark-blue;
+    font-weight: $regular;
+}
+
+p{
+    font-size: $small;
+    color:$light-dblue;
+}
+
+@media (max-width: 575.98px) { 
+    h3{
+        font-size: $large;
+        color:$dark-blue;
+        font-weight: $bold;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    h2{ 
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+ }
+
+@media (max-width: 767.98px) { 
+    h3{
+        font-size: $large;
+        color:$dark-blue;
+        font-weight: $bold;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    
+    h2{ 
+        text-align: center;
+    }
+ }

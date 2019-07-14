@@ -7,3 +7,10 @@
     border: 1px solid $dark-blue;
     }
 }
+
+.thumbnails__imagen--circle-sm img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid $dark-blue;
+    }

@@ -1,5 +1,18 @@
+.bg-cv{
+    background-color: #7cea9c;
+}
+
+
 .navegation{
     background-color: #7cea9c;
+    position: fixed;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    height: 100vh;
+    z-index: 2;
 
     a{
         text-decoration: none; 
@@ -15,7 +28,31 @@
     }
 }
 
+
 .navegation__item{
-    margin: 0;
+    margin: .3rem 0;
     text-transform: uppercase;
 }
+
+.navegation--sm{
+    background-color: #7cea9c;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    a{
+        text-decoration: none; 
+        color: $dark-blue;
+        
+        &:hover{ 
+            color: $light-gray;
+        }
+
+        &:focus{
+            color: $soft-gray;
+        }
+    }
+}
+    
